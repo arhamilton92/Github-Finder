@@ -40,7 +40,7 @@ class App extends Component {
     {process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=$
     {process.env.REACT_APP_GITHUB_CLIENT_SECRET}`);
 
-    this.setState({ user: res.data.items, loading: false })
+    this.setState({ user: res.data, loading: false })
   }
 
   //Clear users from state
@@ -79,7 +79,11 @@ class App extends Component {
               <Route 
                 exact path='/user/:login' 
                 render={props => (
-                <User { ...props } getUser={this.getUser} user={user} loading={loading}/>
+                <User 
+                { ...props } 
+                getUser={this.getUser} 
+                user={user} 
+                loading={loading}/>
               )} />
             </Switch>
           </div>
