@@ -1,7 +1,5 @@
 
-## This app was created following a tutorial.
-
-## App is from React Front to Back by Brad Traversy.
+## This app was created following a tutorial: React Front to Back by Brad Traversy.
 This is NOT an original application.
 
 Github finder uses the github API to search users and display their information.
